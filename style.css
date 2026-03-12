@@ -97,13 +97,45 @@ body{
     cursor: pointer;
     height: 6px;
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .container {
-        width: 92%;
-        margin: 30px auto 80px; /* bottom margin so footer doesn't overlap */
-        padding: 30px 20px;
+        margin: 40px auto 100px;
+        width: 90%;
+        padding: 20px;
     }
-    .display{
-        width: 92%;
+
+    .container h1 {
+        font-size: 28px;
+    }
+
+    .display {
+        width: 100%;
+        padding: 18px 14px;
+    }
+
+    .display input {
+        font-size: 18px;
+        width: 85%;
+    }
+
+    .display img {
+        width: 24px;
+    }
+
+    .container button {
+        width: 100%;
+        font-size: 18px;
+        padding: 14px 20px;
+        justify-content: center;
+    }
+
+    .length-container input[type="range"] {
+        width: 100%;
+    }
+
+    .footer {
+        font-size: 11px;
+        right: 10px;
+        bottom: 10px;
     }
 }
