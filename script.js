@@ -1,6 +1,9 @@
-const passwordBox = document.getElementById("Password");
-const length = 10;
+function updateLength() {
+    const slider = document.getElementById("lengthSlider");
+    document.getElementById("lengthValue").textContent = slider.value;
+}
 
+const passwordBox = document.getElementById("Password");
 const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerCase = "abcdefghijklmnopqrstuvwxyz";
 const number = "0123456789";
@@ -9,6 +12,7 @@ const symbol = "₹~!@#$%^&*()_-={}[]\|.<>/?+";
 const allChars = upperCase+lowerCase+number+symbol;
 
 function createPassword(){
+    const length = parseInt(document.getElementById("lengthSlider").value); 
     let Password = "";
     Password += upperCase[Math.floor(Math.random() * upperCase.length)];
     Password += lowerCase[Math.floor(Math.random() * lowerCase.length)];

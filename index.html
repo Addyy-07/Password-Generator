@@ -16,6 +16,10 @@
         
 
         </div>
+        <div class="length-container">
+    <label>Password Length: <span id="lengthValue">10</span></label>
+    <input type="range" id="lengthSlider" min="4" max="32" value="10" oninput="updateLength()">
+</div>
         <button onclick="createPassword()"><img src="images/generate.png">Generate Password</button>
 
         <div class="footer">
