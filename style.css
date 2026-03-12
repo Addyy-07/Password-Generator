@@ -27,6 +27,7 @@ body{
     justify-content: space-between;
     padding: 26px 20px;
     border-radius: 5px;
+     overflow: hidden;
 }
 .container h1{
     font-weight: 500;
@@ -45,6 +46,8 @@ body{
     border: 0;
     outline: 0;
     font-size: 24px;
+     width: calc(100% - 50px); 
+    min-width: 0;
 }
 .container button img{
     width: 28px;
@@ -111,15 +114,20 @@ body{
     .display {
         width: 100%;
         padding: 18px 14px;
+        gap: 10px;
     }
 
     .display input {
         font-size: 18px;
         width: 85%;
+        width: calc(100% - 44px);
+        min-width: 0;
+
     }
 
     .display img {
         width: 24px;
+        flex-shrink: 0; 
     }
 
     .container button {
